@@ -1,0 +1,126 @@
+:root {
+    --primaryColor: #c02307;
+    --secondaryColor: #a81e05;
+}
+
+body {
+    margin: 0;
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.menu-container {
+    border-bottom: 15px solid var(--secondaryColor);
+    background-color: var(--primaryColor);
+    color: white
+}
+
+.logo-img {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.logo {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.slogan {
+    margin-top: 5px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: var(--secondaryColor);
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 480px) {
+    .logo-img {
+        float:left;
+        margin-right: 15px;
+        max-height: 45px;
+        visibility: visible;
+        height: auto;
+        width: auto;
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .logo-container {
+        float: left;
+        width: 50%;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        width: 1026px;
+        margin: 0 auto;
+    }
+}
+
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
