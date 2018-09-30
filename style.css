@@ -173,6 +173,10 @@ nav a:visited {
     text-align: center;
 }
 
+.row p {
+    text-align: center;
+}
+
 .summary-wrapper {
     width: 90%;
     margin: 10px auto 10px auto;
