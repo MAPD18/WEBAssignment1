@@ -31,11 +31,76 @@
     </div>
 
     <div class="content-container">
-        <div class="content wrapper clearfix">
-            <img class="banner" src="img/banner1.jpg">
-            <img class="banner" src="img/banner2.jpg">
-            <img class="large-banner" src="img/banner3.jpg">
-        </div>
+        <main class="content form-wrapper clearfix">
+            
+            <form>
+                <div class="row side-crop">
+                    <img src="img/margherita.jpg">
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Size:</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="size">
+                            <option value="extra-large">Extra Large</option>
+                            <option value="large">Large</option>
+                            <option value="medium">Medium</option>
+                            <option value="small">Small</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Dough:</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="size">
+                            <option value="extra-large">Regular Dough</option>
+                            <option value="large">Regular Thin Crust</option>
+                            <option value="medium">Regular Thick Crust</option>
+                            <option value="small">Whole Grain Crust</option>
+                            <option value="large">Whole Grain Thin Crust</option>
+                            <option value="medium">Whole Grain Thick Crust</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Toppings:</label>
+                    </div>
+                    <div class="col-75">
+                        <label class="checkbox-container">Artichokes
+                            <input type="checkbox">
+                        </label>
+                        <label class="checkbox-container">Brocolli
+                            <input type="checkbox">
+                        </label>
+                        <label class="checkbox-container">Green Olives
+                            <input type="checkbox">
+                        </label>
+                        <label class="checkbox-container">Red Onions
+                            <input type="checkbox">
+                        </label>
+                        <label class="checkbox-container">Cilantro
+                            <input type="checkbox">
+                        </label>
+                        <label class="checkbox-container">Bacon
+                            <input type="checkbox">
+                        </label>
+                        <label class="checkbox-container">Ground Beef
+                            <input type="checkbox">
+                        </label>
+                        <label class="checkbox-container">Salami
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <input class="action-button" type="submit" value="Add to Cart">
+                </div>
+            </form>
+        </main>
     </div>
 
     <div class="footer-container">
@@ -44,4 +109,5 @@
         </footer>
     </div>
 </body>
+
 </html>
