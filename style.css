@@ -1,6 +1,8 @@
 :root {
     --primaryColor: #c02307;
     --secondaryColor: #a81e05;
+    --actionButtonIddleCollor: green;
+    --actionButtonPressedCollor: darkgreen;
 }
 
 body {
@@ -109,6 +111,32 @@ nav a:visited {
 
 .item p {
     margin: 0;
+}
+
+.item-buttons-container button {
+    background-color: var(--actionButtonIddleCollor);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 9px;
+    cursor: pointer;
+    width: 40%;
+}
+
+.item-buttons-container button:hover {
+    background-color: var(--actionButtonPressedCollor);
+}
+
+.left-button {
+    float: left;   
+}
+
+.right-button {
+    float: right;
 }
 
 @media only screen and (min-width: 480px) {
