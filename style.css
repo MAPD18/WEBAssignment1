@@ -4,6 +4,8 @@
     --actionButtonIddleCollor: green;
     --actionButtonPressedCollor: darkgreen;
     --alternativeBackground: #2d2121;
+    --cancelButtonIddleCollor: #646464;
+    --cancelButtonPressedCollor: #535353;
 }
 
 body {
@@ -132,6 +134,24 @@ nav a:visited {
     background-color: var(--actionButtonPressedCollor);
 }
 
+.cancel-button {
+    background-color: var(--cancelButtonIddleCollor);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 9px;
+    cursor: pointer;
+    width: 40%;
+}
+
+.cancel-button:hover {
+    background-color: var(--cancelButtonPressedCollor);
+}
+
 .left-button {
     float: left;   
 }
@@ -180,7 +200,7 @@ label {
 
 input[type=submit] {
     width: 100%;
-    margin: 20px auto 10px auto;
+    margin: 0 auto 10px auto;
     padding: 15px;
     font-size: 16px;
 }
@@ -208,6 +228,11 @@ input[type=submit] {
     }
 
     input[type=submit] {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .cancel-button {
         width: 100%;
         margin: 20px auto 10px auto;
         padding: 15px;
@@ -284,6 +309,11 @@ input[type=submit] {
     }
 
     .form-wrapper input[type=submit] {
+        width: 40%;
+        float: right;
+    }
+
+    .cancel-button{
         width: 40%;
         float: right;
     }

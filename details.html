@@ -32,8 +32,7 @@
 
     <div class="content-container">
         <main class="content form-wrapper clearfix">
-            
-            <form>
+            <form action="cart.html" method="POST">
                 <div class="row side-crop">
                     <img src="img/margherita.jpg">
                 </div>
@@ -55,13 +54,13 @@
                         <label>Dough:</label>
                     </div>
                     <div class="col-75">
-                        <select name="size">
-                            <option value="extra-large">Regular Dough</option>
-                            <option value="large">Regular Thin Crust</option>
-                            <option value="medium">Regular Thick Crust</option>
-                            <option value="small">Whole Grain Crust</option>
-                            <option value="large">Whole Grain Thin Crust</option>
-                            <option value="medium">Whole Grain Thick Crust</option>
+                        <select name="dough">
+                            <option value="regular">Regular Dough</option>
+                            <option value="thin">Regular Thin Crust</option>
+                            <option value="thick">Regular Thick Crust</option>
+                            <option value="whole">Whole Grain Crust</option>
+                            <option value="whole-thin">Whole Grain Thin Crust</option>
+                            <option value="whole-thick">Whole Grain Thick Crust</option>
                         </select>
                     </div>
                 </div>
@@ -71,35 +70,42 @@
                     </div>
                     <div class="col-75">
                         <label class="checkbox-container">Artichokes
-                            <input type="checkbox">
+                            <input type="checkbox" name="toppins" value="artichokes">
                         </label>
                         <label class="checkbox-container">Brocolli
-                            <input type="checkbox">
+                            <input type="checkbox" name="toppins" value="brocolli">
                         </label>
                         <label class="checkbox-container">Green Olives
-                            <input type="checkbox">
+                            <input type="checkbox" name="toppins" value="green-olives">
                         </label>
                         <label class="checkbox-container">Red Onions
-                            <input type="checkbox">
+                            <input type="checkbox" name="toppins" value="red-onions">
                         </label>
                         <label class="checkbox-container">Cilantro
-                            <input type="checkbox">
+                            <input type="checkbox" name="toppins" value="cilantro">
                         </label>
                         <label class="checkbox-container">Bacon
-                            <input type="checkbox">
+                            <input type="checkbox" name="toppins" value="bacon">
                         </label>
                         <label class="checkbox-container">Ground Beef
-                            <input type="checkbox">
+                            <input type="checkbox" name="toppins" value="ground-beef">
                         </label>
                         <label class="checkbox-container">Salami
-                            <input type="checkbox">
+                            <input type="checkbox" name="toppins" value="salami">
                         </label>
                     </div>
                 </div>
                 <div class="row">
                     <input class="action-button" type="submit" value="Add to Cart">
                 </div>
+
             </form>
+            <form action="list.html" method="GET">
+                <div class="row">
+                    <input class="cancel-button" type="submit" value="Cancel">
+                </div>
+            </form>
+
         </main>
     </div>
 
