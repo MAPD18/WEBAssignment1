@@ -169,9 +169,31 @@ nav a:visited {
     color: white;
 }
 
+.row h1 {
+    text-align: center;
+}
+
+.summary-wrapper {
+    width: 90%;
+    margin: 10px auto 10px auto;
+    background-color: var(--alternativeBackground);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.summary-list h3 {
+    float: right;
+    margin-right: 20px;
+}
+
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+}
+
+.row .action-button{
+    margin-top: 10px;
 }
 
 .row:after {
@@ -189,6 +211,15 @@ label {
 
 .side-crop {
     max-height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    color: var(--alternativeBackground)
+}
+
+.upbottom-crop {
+    max-width: 300px;
     overflow: hidden;
     border-radius: 10px;
     text-align: center;
@@ -219,7 +250,8 @@ input[type=submit] {
     font-size: 16px;
 }
 
-.col-75 select {
+.col-75 select,
+.col-75 input[type=text]{
     width: 100%;
     padding: 15px;
     border: 1px solid #ccc;
@@ -298,6 +330,12 @@ input[type=submit] {
         border-radius: 5px;
     }
 
+    .summary-wrapper {
+        width: 80%;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+    }
+
     .form-wrapper input[type=submit] {
         width: 40%;
         float: right;
@@ -330,7 +368,7 @@ input[type=submit] {
         margin: 2px;
     }
 
-    .form-wrapper {
+    .form-wrapper, .summary-wrapper {
         width: 60%;
     }
 }
